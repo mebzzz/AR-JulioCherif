@@ -3,16 +3,16 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AR.js Example</title>
+    <title>AR Julio Cherif</title>
     <script src="https://aframe.io/releases/1.2.0/aframe.min.js"></script>
     <script src="https://cdn.rawgit.com/jeromeetienne/AR.js/1.7.2/aframe/build/aframe-ar.js"></script>
   </head>
   <body style="margin: 0; overflow: hidden;">
     <a-scene embedded arjs>
-      <!-- Un marcador que se detecta para activar el objeto AR -->
+      <!-- El marcador AR "hiro" que se usará para detectar la imagen -->
       <a-marker preset="hiro">
-        <!-- Un cubo que se mostrará en AR -->
-        <a-box position='0 0.5 0' material='color: red;'></a-box>
+        <!-- Muestra la imagen ARFOTO.png como una superficie plana (plano) en AR -->
+        <a-image src="ARFOTO.png" position="0 0 0" width="1" height="1"></a-image>
       </a-marker>
       <a-entity camera></a-entity>
     </a-scene>
